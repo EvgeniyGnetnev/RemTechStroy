@@ -1,0 +1,52 @@
+﻿@model TableTemplate
+@{
+    string strTitle = "Запись";
+    ViewBag.Title = strTitle;
+}
+<head>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<section class="section" style="padding-top: 10px">
+    <div class="container" style="padding-left: 10px; margin: 0 0 0 0">
+        <div class="feedback" style="font-size: 16px">
+            <h1>@strTitle</h1>
+            <div>
+                <form asp-area="Admin" asp-controller="Table" asp-action="Edit" method="post" enctype="multipart/form-data">
+                    <input type="hidden" asp-for="id" />
+                    <input type="hidden" asp-for="DateAdded" />
+
+                    <div asp-validation-summary="All"></div>
+                    <div class="fb_item">
+                        <label asp-for="Name"></label>
+                    </div>
+                    <div class="fb_item">
+                        <input asp-for="Name" />
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div class="fb_item">
+                        <label asp-for="Price"></label>
+                    </div>
+                    <div class="fb_item">
+                        <input asp-for="Price" />
+                        <span asp-validation-for="Price"></span>
+                    </div>
+                    <div class="fb_item">
+                        <label asp-for="Amount"></label>
+                    </div>
+                    <div class="fb_item">
+                        <input asp-for="Amount" />
+                        <span asp-validation-for="Amount"></span>
+                    </div>
+                    <div class="fb_item">
+                        <label asp-for="Type"></label>
+                    </div>
+                    <div class="fb_item">
+                        <input asp-for="Type" />
+                        <span asp-validation-for="Type"></span>
+                    </div>
+                    <input class="btn" type="submit" value="Сохранить" style="margin-top: 20px" />
+                </form>
+                </div>
+            </div>
+        </div>
+</section>

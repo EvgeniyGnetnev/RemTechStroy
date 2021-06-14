@@ -1,0 +1,448 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel=”icon” href="~/images/HB16x16.ico" type=”image/x-icon”>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9564b31862.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="/scripts/fancybox/jquery.easing-1.3.pack.js"></script>
+    <script type="text/javascript" src="/scripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <link rel="stylesheet" href="/scripts/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+    <script>
+        $(document).ready(function () {
+
+            /* This is basic - uses default settings */
+
+            $("a#example1").fancybox();
+
+            /* Using custom settings */
+
+            $("a#inline").fancybox({
+                'hideOnContentClick': true
+            });
+
+            /* Apply fancybox to multiple items */
+
+            $("a.group").fancybox({
+                'transitionIn': 'elastic',
+                'transitionOut': 'elastic',
+                'speedIn': 600,
+                'speedOut': 200,
+                'overlayShow': false
+            });
+
+        });
+    </script>
+
+    <title>РемТехСтрой</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo" data-scroll="#intro">
+                    РТС "Новый Век"
+                </div>
+                <nav class="nav" id="nav">
+                    <a class="nav_link " href="#" data-scroll="#about">О компании</a>
+                    <a class="nav_link" href="#" data-scroll="#service">Услуги</a>
+                    <a class="nav_link" href="#" data-scroll="#licence">Лицензии</a>
+                    <!--                    <a class="nav_link" href="#">Галерея</a>-->
+                    <a class="nav_link" href="#" data-scroll="#contact-block">Контакты</a>
+                    <a class="nav_link" asp-controller="Storage">Склад</a>
+                </nav>
+                <button class="nav_toggle" id="nav_toggle" type="button">
+                    <span class="nav_toggle_item"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro_inner">
+                <h2 class="intro_subtitle">Компания осуществляет</h2>
+                <h1 class="intro_title">Техническое обслуживание погрузчиков</h1>
+                <a class="btn" href="#" data-scroll="#about">Подробнее</a>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="container">
+                <div class="slider_inner">
+                    <div class="slider_item active">
+                        <span class="slider_num">01</span>
+                        <span class="slider_txt">Интро</span>
+                    </div>
+                    <div class="slider_item">
+                        <span class="slider_num">02</span>
+                        <span class="slider_txt">Работы</span>
+                    </div>
+                    <div class="slider_item">
+                        <span class="slider_num">03</span>
+                        <span class="slider_txt">О нас</span>
+                    </div>
+                    <div class="slider_item">
+                        <span class="slider_num">04</span>
+                        <span class="slider_txt">Контакты</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="section" id="about">
+
+        <div class="container">
+            <div class="section_header">
+                <h3 class="section_subtitle">Чем мы занемаемся</h3>
+                <h2 class="section_title">Наша деятельность</h2>
+                <div class="section_text">
+                    <p>
+                        Наша компания предоставляет множество услуг по обслуживанию и ремонту дорожно-строительной техники производства чехии и словакии.
+                        У нас работают высококвалифицированные специалисты. Широкий ассортимент запчастей на складе в Москве. Индивидуальный подход к каждому клиенту
+                        и безупречная репутация на рынке позволяют нам максимально полно и оперативно удовлетворить потребности каждого клиента.
+                    </p>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about_item">
+                    <div class="about_inner">
+                        <div class="about_image">
+                            <img src="/images/about-3.jpg" alt="">
+                        </div>
+                        <div class="about_text">Ремонт и сервис</div>
+                    </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_inner">
+                        <div class="about_image">
+                            <img src="/images/about-2.jpg" alt="">
+                        </div>
+                        <div class="about_text">Аренда погрузчиков</div>
+                    </div>
+                </div>
+                <div class="about_item">
+                    <div class="about_inner">
+                        <div class="about_image">
+                            <img src="/images/about-1.jpg" alt="">
+                        </div>
+                        <div class="about_text">Продажа запасных частей и техники</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="statistic">
+        <div class="container">
+            <div class="stat">
+                <div class="stat_item">
+                    <div class="stat_count">20</div>
+                    <div class="stat_text">лет опыта</div>
+                </div>
+                <div class="stat_item">
+                    <div class="stat_count">N</div>
+                    <div class="stat_text">Машин в аренду</div>
+                </div>
+                <div class="stat_item">
+                    <div class="stat_count">6</div>
+                    <div class="stat_text">Месяцев сборку</div>
+                </div>
+                <div class="stat_item">
+                    <div class="stat_count">N</div>
+                    <div class="stat_text">xxxxxxx</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="section_header">
+                <h3 class="section_subtitle">Как мы работаем</h3>
+                <h2 class="section_title">Наши преимущества</h2>
+            </div>
+            <div class="service ">
+                <div class="service_item service_item_border">
+                    <div class="service_icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="service_title">Качественный ремонт</div>
+                    <div class="service_text">И ТО своей техники на нашей базе с использованием только оригинальных запчастей.</div>
+                </div>
+                <div class="service_item service_item_border">
+                    <div class="service_icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="service_title">Консультации</div>
+                    <div class="service_text">Квалифицированный специалист приедет на Ваш адрес и бесплатно проконсультирует</div>
+                </div>
+                <div class="service_item service_item_border">
+                    <div class="service_icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div class="service_title">Аренда погрузчика</div>
+                    <div class="service_text">Может быть оплачена в рассрочку или единовременно удобным для Вас способом оплаты.</div>
+                </div>
+                <div class="service_item service_item_border_2">
+                    <div class="service_icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="service_title">Техническое обслуживание</div>
+                    <div class="service_text">Арендованной техники и ремонт на территории заказчика или на месте проведения работ.</div>
+                </div>
+                <div class="service_item">
+                    <div class="service_icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="service_title">Приобритайте</div>
+                    <div class="service_text">Оригинальные запчасти в любом количестве с нашего склада в Москве.</div>
+                </div>
+                <div class="service_item">
+                    <div class="service_icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div class="service_title">Дисконтная карта</div>
+                    <div class="service_text">Гарантирует вам скидку на предлагаемую нами продукцию.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section_gray" id="service">
+        <div class="container">
+            <div class="section_header">
+                <h3 class="section_subtitle">Что мы можем</h3>
+                <h2 class="section_title">Предоставляемые услуги</h2>
+
+            </div>
+            <div class="work">
+                <div class="work_item">
+                    <div class="work_image">
+                        <img src="http://placehold.it/570x380" alt="">
+                    </div>
+                </div>
+                <div class="work_item">
+                    <div class="accordion">
+                        <div class="accordion_item" data-collapse="#work_1">
+                            <div class="accordion_header">
+
+                                <i class="fas fa-tools accordion_icon"></i>
+
+                                <div class="accordion_title">
+                                    Ремонт и сервис
+                                </div>
+                                <i class="fas fa-chevron-down accordion_arrow" id="arrow_1"></i>
+                            </div>
+                            <div class="accordion_content" id="work_1">
+                                Бесплатная консультация и выезд квалифицированного специалиста на трерриторию заказчика. <br>
+                                Качественный ремонт и техническое обслуживание вашей техники с
+                                использованием оригинальных запчастей. <br> На время ремонта Вашей техники, мы предоставим
+                                Вам технику в аренду на выгодных условиях.
+                            </div>
+                        </div>
+                        <div class="accordion_item" data-collapse="#work_2">
+                            <div class="accordion_header">
+
+                                <i class="fas fa-history accordion_icon"></i>
+
+                                <div class="accordion_title">
+                                    Аренда и сборка техники
+                                </div>
+                                <i class="fas fa-chevron-down accordion_arrow" id="arrow_2"></i>
+                            </div>
+                            <div class="accordion_content" id="work_2">
+                                Сдаем в аренду универсальный погрузчик с машинистом. <br>
+                                Оплата аренды как единоразово так и в рассрочку. <br> Проведем техническое обслуживание и ремонт аредованной техники на Вашей территории.
+                                <br> Индивидуальное предложение. Под заказ соберем Вам погрузчик, гарантия на выполнение работы: 6 месяцев.
+                            </div>
+                        </div>
+                        <div class="accordion_item" data-collapse="#work_3">
+                            <div class="accordion_header">
+
+                                <i class="fas fa-shopping-cart accordion_icon"></i>
+
+                                <div class="accordion_title">
+                                    Продажа техники и деталей
+                                </div>
+                                <i class="fas fa-chevron-down accordion_arrow" id="arrow_3"></i>
+                            </div>
+                            <div class="accordion_content" id="work_3">
+                                У нас Вы можете приобрести оригинальные запчасти в любом количестве со склада в Москве. <br>
+                                Сделайте заказ и получите в кратчайшие сроки запчасти и дорожно-строительную технику из Чехии и Словакии. <br>
+                                Скидка на предлагаемую нами продукцию обладателям нашей дисконтной карты.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--
+        <div class="section section_gray">
+            <div class="container">
+                <div class="reviews">
+                    <a href="#" class="reviews_btn reviews_btn_previous"><i class="fas fa-chevron-left accordion_arrow"></i></a>
+                    <a href="#" class="reviews_btn reviews_btn_next"><i class="fas fa-chevron-right accordion_arrow"></i></a>
+                    <div class="reviews_item">
+                        <img src="http://placehold.it/145x145" alt="" class="reviews_photo">
+                        <div class="reviews_text">
+                            "Парни делали ремонт в моей квартире на улице Некрасова, полностью меняли окна пластиковые,
+                            клеили обои и ещё некоторые вещи делали не столь значительные . "
+                        </div>
+                        <div class="reviews_author">
+                            Илья Н.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    -->
+
+
+
+    <section class="section" id="licence">
+        <div class="container">
+            <div class="section_header">
+
+                <h3 class="section_subtitle">Гарантия качества</h3>
+                <h2 class="section_title">Сертификаты и свидетельства</h2>
+                <!-- <div class="section_text">
+                    <p>
+                        Наша компания предоставляет множество услуг по обслуживанию и ремонту дорожно-строительной техники производства чехии и словакии.
+                    </p>
+                </div> -->
+            </div>
+
+            <div class="licence">
+                <div class="licence_item">
+                    <div class="licence_inner">
+                        <div class="licence_image">
+                            <a id="example1" href="/images/1.jpg"><img src="/images/1.jpg" class="licence_pic" alt=""></a>
+                        </div>
+                        <div class="licence_text">
+                            Сертификат LOCUST <br> 28.05.2008
+                        </div>
+                    </div>
+                </div>
+                <div class="licence_item">
+                    <div class="licence_inner">
+                        <div class="licence_image">
+                            <img src="/images/2.jpg" class="licence_pic" alt="">
+                        </div>
+                        <div class="licence_text">
+                            Сертификат LOCUST <br> 29.06.2011
+                        </div>
+                    </div>
+                </div>
+                <div class="licence_item">
+                    <div class="licence_inner">
+                        <div class="licence_image">
+                            <img src="/images/3.jpg" class="licence_pic" alt="">
+                        </div>
+                        <div class="licence_text">
+                            Свидетельство о регистрации <br> 20.04.2000
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section_gray" id="contact-block">
+        <div class="section_header">
+
+            <h3 class="section_subtitle">Наши контакты</h3>
+            <h2 class="section_title">Как с нами связаться</h2>
+            <!-- <div class="section_text">
+                <p>
+                    Наша компания предоставляет множество услуг по обслуживанию и ремонту дорожно-строительной техники производства чехии и словакии.
+                </p>
+            </div> -->
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702.6818610627561!2d37.50149650319088!3d55.878182112913734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53831d421068b%3A0x6c5a189f46668711!2z0JjQttC-0YDRgdC60LDRjyDRg9C7LiwgNiDRgdGC0YDQvtC10L3QuNC1IDksINCc0L7RgdC60LLQsCwgMTI1NTk5!5e1!3m2!1sru!2sru!4v1621443501512!5m2!1sru!2sru" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="container">
+            <div class="contact">
+                <div class="contact_item">
+                    <div class="contact_icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact_title">Звоните нам:</div>
+                    <div class="contact_text"> +7(916)674-85-47 <br> +7(910)409-59-53 </div>
+                </div>
+                <div class="contact_item">
+                    <div class="contact_icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact_title">Наш адрес:</div>
+                    <div class="contact_text">Ижорская ул., 6 строение 9, Москва, 125599</div>
+                </div>
+                <div class="contact_item">
+                    <div class="contact_icon">
+                        <i class="fas fa-at"></i>
+                    </div>
+                    <div class="contact_title">Напишите нам:</div>
+                    <div class="contact_text">rtsnoviyvek@gmail.com</div>
+                </div>
+            </div>
+            <div class="feedback" id="inline">
+                <form id="contact" name="contact" method="post" action="/scripts/sendmessage.php">
+                    <h3 class="fb_title">Закажите выезд специалиста прямо сейчас!</h3>
+                    <div class="fb_item">
+                        <h4 class="fb_name">Ваше имя:</h4>
+                        <input class="txt" id="name" name="name" type="name" required>
+                    </div>
+                    <div class="fb_item">
+                        <h4 class="fb_name">Телефон:</h4>
+                        <input class="txt" id="phone" name="phone" type="phone" required>
+                        <script>
+                            $("#phone").mask("+7 (999) 999-99-99");
+                        </script>
+                    </div>
+                    <div class="fb_item">
+                        <h4 class="fb_name">E-mail:</h4>
+                        <input class="txt" id="email" name="email" type="email" required>
+                    </div>
+                    <div class="fb_item">
+                        <h4 class="fb_name">Сообщение:</h4>
+                        <textarea class="txtarea" name="message" id="msg" required></textarea>
+                    </div>
+
+                    <div class="wrap">
+                        <input type="checkbox" class="checkbox" id="agreement" onchange="document.getElementById('send').disabled = !this.checked;">
+                        <label for="agreement">
+                            <span>Вы даете свое согласие на обработку персональных данных в соответсвии с <a target="new" href="#">политикой конфиденциальности</a>.  </span>
+                        </label>
+                    </div>
+
+                    <div class="fb_item">
+                        <input type="submit" class="btn" id="send"></input>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/scripts/app.js"></script>
+</body>
+
+</html>
